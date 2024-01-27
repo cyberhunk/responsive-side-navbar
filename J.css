@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0px;
+}
+
+/* object-fit:contain; */
+
+.main_box {
+    background: url(camera.jpg);
+    height: 100vh;
+    background: cover;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    color: white;
+    width: 240px;
+    height: 100vh;
+    border: 1px solid rgb(125, 121, 121);
+    /* background-color: rgb(149, 149, 151); */
+    backdrop-filter: blur(70px);
+    transition: all 0.3s linear;
+}
+
+
+
+
+i {
+
+    color: white;
+
+    padding: 15px;
+    padding-left: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#check {
+    opacity: 0;
+}
+
+.btn_one {
+    position: absolute;
+    right: 1250px;
+    top: 15px;
+    font-size: 25px;
+}
+
+.btn_two {
+    position: absolute;
+    left: 161px;
+    bottom: 533px;
+    font-size: 30px;
+    opacity: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    /* left: 22px; */
+    /* top: 6px; */
+    font-size: 26px;
+    /* width: 200px; */
+    /* border: 2px solid gray; */
+    box-shadow: 0 0 4px rgb(255, 255, 255, 0.5);
+    height: 50px;
+    /* line-height: 60px; */
+
+}
+
+.menu {
+    padding-top: 90px;
+
+}
+
+#social {
+    /* margin: 15px; */
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    margin-left: 28px;
+    bottom: 50px;
+    padding: 1px;
+    margin-top: 120px;
+
+}
+
+#social:hover {
+    opacity: 0.5;
+    font-size: 22px;
+}
+
+i:hover {
+    /* font-size: 18px; */
+}
+
+.btn_two {
+    font-size: 30px;
+}
+
+/* 888888888888888  */
+
+#check:checked~.sidebar_menu {
+
+    left: 0;
+}
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 4px rgb(255, 255, 255, 0.5);
+}
+
+#check:checked~.btn_one {
+    opacity: 0;
+}
+
+#check:checked~.sidebar_menu .btn_two {
+    opacity: 5;
+    color: aliceblue;
+}
+
+.logo {
+    box-shadow: 0 0 4px rgb(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+#logo {
+    /* text-align: center; */
+}
